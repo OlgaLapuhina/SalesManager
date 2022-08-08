@@ -14,4 +14,22 @@ public class SalesManager {
         }
         return max;
     }
+
+    public int min() {
+        int min = Integer.MAX_VALUE;
+        for (int sale : sales) {
+            if (sale < min) {
+                min = sale;
+            }
+        }
+        return min;
+    }
+
+    public int mediumCropped() {
+        int amount = 0;
+        for (int sale : sales) {
+            amount += sale;
+        }
+        return (amount - min() - max()) / (sales.length - 2);
+    }
 }
