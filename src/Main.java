@@ -3,6 +3,6 @@ public class Main {
         SalesManager salesManager = new SalesManager(new int[5]);
         salesManager.sales = new int[]{1000, 2000, 3000, 1500, 2500};
 
-        System.out.println("Максимальная сумма продажи среди сотрудников: " + salesManager.max());
+        System.out.println("РњР°РєСЃРёРјР°Р»СЊРЅР°СЏ СЃСѓРјРјР° РїСЂРѕРґР°Р¶: " + salesManager.max());
     }
 }
